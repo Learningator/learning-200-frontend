@@ -1,3 +1,7 @@
+# Images
+*.png
+*.svg
+
 # Logs
 logs
 *.log

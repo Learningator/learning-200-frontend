@@ -1,5 +1,9 @@
 import React, { Component } from "react";
 import AreaCard from "../../components/AreaCard/AreaCard";
+import DataScience from "../../images/ds.png";
+import FrontEnd from "../../images/frontend.png";
+import BackEnd from "../../images/backend.png";
+
 import "./Home.scss";
 
 export class Home extends Component {
@@ -8,9 +12,21 @@ export class Home extends Component {
       <React.Fragment>
         <div className="Main-Grid-container">
           <div className="Grid-container">
-            <AreaCard />
-            <AreaCard />
-            <AreaCard />
+            <AreaCard
+              soon="Pr&oacute;ximamente"
+              area="Front-End"
+              className="Container-disabled"
+              to="/soon"
+              image={FrontEnd}
+            />
+            <AreaCard
+              soon="Pr&oacute;ximamente"
+              area="Back-End"
+              className="Container-disabled"
+              to="/soon"
+              image={BackEnd}
+            />
+            <AreaCard area="Data Science" to="/ds" image={DataScience} />
           </div>
         </div>
       </React.Fragment>
