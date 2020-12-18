@@ -1,9 +1,18 @@
-import React, { Component } from "react";
+import React from "react";
+import "./Navbar.scss";
+import Logo from "../../images/logo-platzimaster_white.png";
+import { Link } from "react-router-dom";
 
-export class Navbar extends Component {
-  render() {
-    return <div></div>;
-  }
+function Navbar() {
+  return (
+    <React.Fragment>
+      <header className="Navbar">
+        <Link to="/">
+          <img className="Logo" src={Logo} alt="Platzi Master Logo" />
+        </Link>
+      </header>
+    </React.Fragment>
+  );
 }
 
 export default Navbar;
