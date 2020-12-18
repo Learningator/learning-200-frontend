@@ -1,0 +1,18 @@
+@import "../../styles.module.scss";
+
+.Main-Grid-container {
+  width: 100%;
+  height: 600px;
+  display: grid;
+  grid-template: 1fr 1fr 1fr / 1fr 1fr 1fr;
+  grid-template-areas:
+    " . . . "
+    ". container ."
+    ". . .";
+}
+
+.Grid-container {
+  grid-area: container;
+  display: grid;
+  gap: 25px;
+}
