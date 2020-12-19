@@ -1,0 +1,13 @@
+@import "../../styles.module.scss";
+
+.LP__Container {
+  min-height: 600px;
+  height: 100%;
+  width: 100%;
+
+  display: grid;
+  gap: 30px;
+  grid-template-rows: repeat(4, 1fr);
+  align-items: center;
+  justify-items: center;
+}

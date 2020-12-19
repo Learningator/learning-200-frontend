@@ -51,10 +51,12 @@ export class Input extends Component {
               onChange={this.handleChange}
             />
 
-            <Link to='/ds'>
+
+            <Link to="/lp">
               <button type='button' onClick={this.sendUser}>
                 Comenzar
               </button>
+
             </Link>
           </div>
         </div>
