@@ -18,6 +18,23 @@ export class Input extends Component {
     });
   };
 
+  sendUser = async () => {
+    await window
+      .fetch('3.137.109.12:3000/main', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/x-www-form-urlencoded',
+        },
+        body: {
+          user: 'UlisesSG',
+          field: 'DS',
+          subfield: 'IA/DS',
+        },
+      })
+      .then((response) => JSON.stringify(response))
+      .then((data) => console.log(data));
+  };
+
   render() {
     return (
       <React.Fragment>
@@ -35,7 +52,9 @@ export class Input extends Component {
             />
 
             <Link to='/ds'>
-              <button>Comenzar</button>
+              <button type='button' onClick={this.sendUser}>
+                Comenzar
+              </button>
             </Link>
           </div>
         </div>
