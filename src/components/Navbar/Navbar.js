@@ -13,6 +13,11 @@ function Navbar() {
             alt="Platzi Master Logo"
           />
         </Link>
+        <div className="Navbar__LP">
+          <Link to="/lp">
+            <span>Learning Path</span>
+          </Link>
+        </div>
       </header>
     </React.Fragment>
   );
