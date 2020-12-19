@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import "./Course.scss";
 
+
 export class Course extends Component {
   render() {
     return (

@@ -35,7 +35,6 @@ export class Home extends Component {
               to="/input"
               image={DataScience}
             />
-            <AreaCard area="Data Science" to="/ds" image={DataScience} />
           </div>
         </div>
       </React.Fragment>
