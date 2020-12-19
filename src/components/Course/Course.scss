@@ -1,10 +1,19 @@
 @import "../../styles.module.scss";
 
-.Course__Container {
-  height: 150px;
+.Course__Main-Container {
+  height: 85px;
   width: 70%;
   max-width: 650px;
-  padding: 5px 10px;
+  padding: 5px;
+  margin-bottom: 30px;
+}
+
+.Course__Container {
+  height: 85px;
+  width: 100%;
+  max-width: 650px;
+  padding: 5px;
+  margin-bottom: 30px;
   color: $color-secondary;
   border: 1px solid $color-white;
   border-radius: $border-radius * 3;
@@ -12,7 +21,8 @@
   box-shadow: 1.5px 1.5px 1.5px 1px $color-shadow;
 
   display: grid;
-  grid-template: repeat(3, 1fr) / 150px 1fr;
+  gap: 5px;
+  grid-template: repeat(3, 1fr) / 100px 1fr;
   grid-template-areas:
     "photo title"
     "photo teacher"
@@ -23,24 +33,27 @@
 .Course__Container img {
   grid-area: photo;
   justify-self: center;
-  width: 80%;
+  height: 80%;
   max-width: 100px;
 }
 
 .Course__Container h3 {
   margin: 0;
   grid-area: title;
-  font-size: 24px;
+  font-size: 18px;
   font-weight: 600;
 }
 
 .Course__Container span {
   grid-area: teacher;
-  font-size: 18px;
+  font-size: 14px;
 }
 
-.Course__Container p {
+.Course__Container-Data {
   grid-area: data;
-  margin: 0;
-  font-size: 18px;
+}
+
+.Course__Container-Data span {
+  margin: 0 25px;
+  font-size: 14px;
 }

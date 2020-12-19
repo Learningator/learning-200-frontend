@@ -1,11 +1,13 @@
 @import "../../styles.module.scss";
 
-.Navbar {
+.Navbar__Container {
+  position: relative;
   background-color: $color-secondary;
   height: 50px;
+  box-shadow: 2px 2px 1px 1px $color-shadow;
 }
 
-.Logo {
+.Navbar__Logo {
   margin: 5px;
   height: 40px;
 }

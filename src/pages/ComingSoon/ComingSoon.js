@@ -1,10 +1,15 @@
 import React, { Component } from "react";
+import "./ComingSoon.scss";
 
 export class ComingSoon extends Component {
   render() {
     return (
       <React.Fragment>
-        <h1>Coming Soon!</h1>
+        <div className="Soon__Title">
+          <h1>
+            Coming <br /> Soon!
+          </h1>
+        </div>
       </React.Fragment>
     );
   }

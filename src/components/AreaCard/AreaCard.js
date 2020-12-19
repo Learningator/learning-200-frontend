@@ -6,11 +6,11 @@ export class AreaCard extends Component {
   render() {
     return (
       <React.Fragment>
-        <div className="Container">
+        <div className="Card__Container">
           <Link to={this.props.to}>
             <div className={`Container-Children ${this.props.className}`}>
               <p>
-                {this.props.soon}
+                <strong>{this.props.soon}</strong>
                 <br />
                 {this.props.area}
               </p>
