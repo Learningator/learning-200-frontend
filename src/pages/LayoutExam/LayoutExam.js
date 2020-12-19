@@ -1,5 +1,6 @@
-import React, { Component } from "react";
-import { BrowserRouter, Route, Switch } from "react-router-dom";
+import React, { Component } from 'react';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import Exam from '../../components/Exam/Exam';
 
 export class LayoutExam extends Component {
   state = {};
@@ -8,6 +9,7 @@ export class LayoutExam extends Component {
     return (
       <BrowserRouter>
         <Switch>
+          <Exam />
           <Route />
         </Switch>
       </BrowserRouter>
