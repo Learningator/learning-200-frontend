@@ -19,20 +19,24 @@ export class Input extends Component {
   };
 
   sendUser = async () => {
-    await window
-      .fetch('3.137.109.12:3000/main', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/x-www-form-urlencoded',
-        },
-        body: {
-          user: 'UlisesSG',
-          field: 'DS',
-          subfield: 'IA/DS',
-        },
-      })
-      .then((response) => JSON.stringify(response))
-      .then((data) => console.log(data));
+    var myHeaders = new Headers();
+    myHeaders.append('Content-Type', 'application/x-www-form-urlencoded');
+
+    var urlencoded = new URLSearchParams();
+    urlencoded.append('user', this.state.data.username);
+    urlencoded.append('field', 'DS');
+    urlencoded.append('subfield', 'IA/ML');
+
+    var requestOptions = {
+      method: 'POST',
+      headers: myHeaders,
+      body: urlencoded,
+    };
+
+    fetch('https://learning-200.herokuapp.com/main', requestOptions)
+      .then((response) => response.json())
+      .then((result) => console.log(result))
+      .catch((error) => console.log('error', error));
   };
 
   render() {
@@ -51,12 +55,10 @@ export class Input extends Component {
               onChange={this.handleChange}
             />
 
-
-            <Link to="/lp">
+            <Link to='/lp'>
               <button type='button' onClick={this.sendUser}>
                 Comenzar
               </button>
-
             </Link>
           </div>
         </div>
