@@ -26,7 +26,12 @@ export class Home extends Component {
               to="/soon"
               image={BackEnd}
             />
-            <AreaCard area="Data Science" to="/ds" image={DataScience} />
+            <AreaCard
+              className="Container-enabled"
+              area="Data Science"
+              to="/input"
+              image={DataScience}
+            />
           </div>
         </div>
       </React.Fragment>
