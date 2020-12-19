@@ -23,7 +23,7 @@ export class Input extends Component {
     myHeaders.append('Content-Type', 'application/x-www-form-urlencoded');
 
     var urlencoded = new URLSearchParams();
-    urlencoded.append('user', 'JoelEduardo93');
+    urlencoded.append('user', this.state.data.username);
     urlencoded.append('field', 'DS');
     urlencoded.append('subfield', 'IA/ML');
 
@@ -34,7 +34,7 @@ export class Input extends Component {
     };
 
     fetch('http://3.137.109.12:3000/main', requestOptions)
-      .then((response) => JSON.parse(response))
+      .then((response) => response.json())
       .then((result) => console.log(result))
       .catch((error) => console.log('error', error));
   };
