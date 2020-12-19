@@ -1,0 +1,46 @@
+@import "../../styles.module.scss";
+
+.Course__Container {
+  height: 150px;
+  width: 70%;
+  max-width: 650px;
+  padding: 5px 10px;
+  color: $color-secondary;
+  border: 1px solid $color-white;
+  border-radius: $border-radius * 3;
+  background-color: $color-white;
+  box-shadow: 1.5px 1.5px 1.5px 1px $color-shadow;
+
+  display: grid;
+  grid-template: repeat(3, 1fr) / 150px 1fr;
+  grid-template-areas:
+    "photo title"
+    "photo teacher"
+    "photo data";
+  align-items: center;
+}
+
+.Course__Container img {
+  grid-area: photo;
+  justify-self: center;
+  width: 80%;
+  max-width: 100px;
+}
+
+.Course__Container h3 {
+  margin: 0;
+  grid-area: title;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.Course__Container span {
+  grid-area: teacher;
+  font-size: 18px;
+}
+
+.Course__Container p {
+  grid-area: data;
+  margin: 0;
+  font-size: 18px;
+}

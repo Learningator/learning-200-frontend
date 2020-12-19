@@ -34,7 +34,7 @@ export class Input extends Component {
               onChange={this.handleChange}
             />
 
-            <Link to="/ds">
+            <Link to="/lp">
               <button>Comenzar</button>
             </Link>
           </div>
