@@ -26,7 +26,7 @@ export class Input extends Component {
           'Content-Type': 'application/x-www-form-urlencoded',
         },
         body: {
-          user: 'UlisesSG',
+          user: this.state.data.username,
           field: 'DS',
           subfield: 'IA/DS',
         },
