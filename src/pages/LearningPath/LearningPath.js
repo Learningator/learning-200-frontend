@@ -81,7 +81,7 @@ export class LearningPath extends Component {
             <hr />
           </div>
           <div className="LP__Container">
-            {this.state.data.map((course) => {
+            {this.state.data.map((course, index) => {
               return (
                 <Course
                   title={course.title}
@@ -90,6 +90,7 @@ export class LearningPath extends Component {
                   teacher={course.teacher}
                   level={course.level}
                   url={course.url}
+                  key={`course-${index}`}
                 />
               );
             })}
