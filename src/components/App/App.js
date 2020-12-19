@@ -5,6 +5,7 @@ import Layout from "../Layout/Layout";
 import "./App.scss";
 import InputPage from "../../pages/InputPage/InputPage";
 import LearningPath from "../../pages/LearningPath/LearningPath";
+import LayoutExam from "../../pages/LayoutExam/LayoutExam";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
             <Route exact path="/" component={Home} />
             <Route exact path="/soon" component={ComingSoon} />
             <Route exact path="/input" component={InputPage} />
+            <Route exact path="/exam" component={LayoutExam} />
             <Route exact path="/lp" component={LearningPath} />
           </Switch>
         </main>

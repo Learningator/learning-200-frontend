@@ -5,9 +5,28 @@
   background-color: $color-secondary;
   height: 50px;
   box-shadow: 2px 2px 1px 1px $color-shadow;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
 }
 
 .Navbar__Logo {
   margin: 5px;
   height: 40px;
+}
+
+.Navbar__LP {
+  justify-self: end;
+  align-self: center;
+}
+
+.Navbar__LP span {
+  margin: 0;
+  margin-right: 20px;
+  font-size: 18px;
+  font-weight: 600;
+  color: $color-white;
+}
+
+.Navbar__LP span:hover {
+  color: $color-background-hover;
 }

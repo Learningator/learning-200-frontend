@@ -4,7 +4,7 @@ export class Question extends Component {
   render() {
     return (
       <React.Fragment>
-        <h3>{this.props.question}</h3>
+        <h3>{this.props.description}</h3>
       </React.Fragment>
     );
   }
