@@ -33,7 +33,7 @@ export class Input extends Component {
       body: urlencoded,
     };
 
-    fetch('http://3.137.109.12:3000/main', requestOptions)
+    fetch('https://learning-200.herokuapp.com/main', requestOptions)
       .then((response) => response.json())
       .then((result) => console.log(result))
       .catch((error) => console.log('error', error));
